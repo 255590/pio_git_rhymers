@@ -8,9 +8,9 @@ public class DefaultCountingOutRhymer {
 
 	private static final int FULL_TAB = 11;
 
-	private static final int NUMBERS_SIZE = 12;
+	private static final int MAX_SIZE = 12;
 
-	private final int[] numbers = new int[NUMBERS_SIZE];
+	private final int[] numbers = new int[MAX_SIZE];
 
     public int total = EMPTY;
 
