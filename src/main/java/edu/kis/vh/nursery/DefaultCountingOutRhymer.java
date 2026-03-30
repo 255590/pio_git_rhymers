@@ -14,6 +14,7 @@ public class DefaultCountingOutRhymer {
 	private static final int MAX_SIZE = 12;
 
 	private final int[] numbers = new int[MAX_SIZE];
+    // TODO: Zamiast tablicy o stalym rozmiarze mozna uzyc np. ArrayList, gdzie rozmiar jest elastyczny
 
     /**
      * Zwraca pole total
