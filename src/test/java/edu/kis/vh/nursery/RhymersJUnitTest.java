@@ -76,4 +76,16 @@ public class RhymersJUnitTest {
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
 
+    @Test
+    public void testHanoiRhymerRejection() {
+        HanoiRhymer hanoi = new HanoiRhymer();
+        int firstValue = 5;
+        int largerValue = 10;
+
+        hanoi.countIn(firstValue);
+        hanoi.countIn(largerValue);
+
+        Assert.assertEquals(1, hanoi.reportRejected());
+        Assert.assertEquals(firstValue, hanoi.peekABoo());
+    }
 }
